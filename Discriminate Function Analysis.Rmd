@@ -1,0 +1,33 @@
+---
+title: "Discriminate Function Analysis in R"
+author: "Amy Atwater, Ingrid Lundeen, Emma Curtis"
+date: "December 2, 2016"
+output: 
+  html_document:
+    theme: spacelab
+    highlight: espresso
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, 
+  warning = FALSE, 
+  comment = "##", 
+  prompt = FALSE, 
+  tidy = TRUE, 
+  tidy.opts = list(width.cutoff = 75)
+  )
+```
+
+#Preliminaries 
+Please install these packages first: 
+
+#Objectives
+In this module we will examine Discriminate Function Analysis, a pattern-recognition statistical method that characterizes or seperates two or more classes of objects or events. We will go over the different uses of DFAs, work through a basic example by hand in R, and will end with running an analysis together using actual data. 
+## Key concepts: ??? 
+
+#The Basics
+Discriminate Function Analysis (DFA) is a populate statistical method
