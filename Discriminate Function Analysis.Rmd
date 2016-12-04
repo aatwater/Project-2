@@ -35,7 +35,7 @@ Discriminate Function Analysis (DFA) is a populate statistical method used to de
 Last week we learned about Principal Component Analysis, a technique to describe the relationship and structure in data. We saw how useful it can be in finding the correlations between variables in multivariate data. Today, we are going to take that one step further and use those variables to predict categorical grouping, using Discriminate Function Analysis.
 Biologically, you might use a DFA to determine which variables discriminate between leaves eaten by 1) sloths  2) howler monkeys 3) leaf ants. For that purpose, the biologist would collect data on numerous leaf characteristics of those species eaten by each of the animal groups. Ideally, most leaves will naturally fall into one of these three categories. DFA could then be used to determine which variables are the best predictors of whether a leaf will be eaten by sloths, monkeys, or ants. 
 
-<img src="https://drive.google.com/open?id=1OLV5rtpdryS3lCMG5fpm4VToAOiNy4BKGw" width ="900"/>
+![Which critter tossed your salad??](~/Desktop/veg.png)
 
 DFA is like the reverse of a MANOVA, which is used to predict multiple continuous dependent variables by one or more independent categorical variables. Instead, DFA is a powerful predictor tool, and useful in determining whether a set of variables is actually effective in predicting categories. This means that DFA can only be used when groups are known a priori. You can think of DFA as a classification, with the proper dataset, DFA can distribute things into groups of the same type.
 
