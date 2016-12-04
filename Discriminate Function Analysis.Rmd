@@ -30,4 +30,40 @@ In this module we will examine Discriminate Function Analysis, a pattern-recogni
 ## Key concepts: ??? 
 
 #The Basics
-Discriminate Function Analysis (DFA) is a populate statistical method
+Discriminate Function Analysis (DFA) is a populate statistical method used to determine which continuous independent variables discriminate between two or more categorical variables in such a way that the differences between predefined groups are maximized. 
+
+Last week we learned about Principal Component Analysis, a technique to describe the relationship and structure in data. We saw how useful it can be in finding the correlations between variables in multivariate data. Today, we are going to take that one step further and use those variables to predict categorical grouping, using Discriminate Function Analysis.
+Biologically, you might use a DFA to determine which variables discriminate between leaves eaten by 1) sloths  2) howler monkeys 3) leaf ants. For that purpose, the biologist would collect data on numerous leaf characteristics of those species eaten by each of the animal groups. Ideally, most leaves will naturally fall into one of these three categories. DFA could then be used to determine which variables are the best predictors of whether a leaf will be eaten by sloths, monkeys, or ants. 
+
+
+DFA is like the reverse of a MANOVA, which is used to predict multiple continuous dependent variables by one or more independent categorical variables. Instead, DFA is a powerful predictor tool, and useful in determining whether a set of variables is actually effective in predicting categories. This means that DFA can only be used when groups are known a priori. You can think of DFA as a classification, with the proper dataset, DFA can distribute things into groups of the same type.
+
+# Simple Graphic Example on the board
+- from http://www.alanfielding.co.uk/multivar/dawords.htm
+
+##Following example uses a very simple data set of two groups and two variables. 
+## Demonstrate a new axis which passes through the two group means in a way that the groups do not overlap, and is a linear combination of x & y. This is a discriminant score. 
+Here is a animations showing how some projections of data are able to separate date better than others:
+<img src="http://www.alanfielding.co.uk/multivar/images/anim3d.gif" width="420px"/> 
+
+
+# The Steps/Math? 
+DFA is a two-step process. 
+## Step One
+The first part is testing the significance of a set of discriminant functions. This step is computationally identical to MANOVA. From your data, there is a matrix of total variances and covariances, and there is another matrix of pooled within-group variances and covariances. Multivariate F tests are used to compare the two matrices and determine if there are any significant differences between groups. If any of the results of the multivariate test are statistically significant, then you must see which of your variables have the greatest explanatory power, i.e. significantly different means across the groups. 
+
+## Step Two
+If the group means are found to be statistically significant, then you can move on to step two: classification of the variables. DFA will automatically determine the optimal combination of variables so that the first function provides the most overall discriminate between categories, the second provides the second most, and so on. BLAH MORE...
+
+# Assumptions
+- Sample Size: Sample size does not have to be equal. However, the sample size of the smallest group must be greater than the number of predictor variables.
+
+- Normal Distribution: DFA assumes the data represent a sample from a multivariate normal distribution.
+
+- Homogeneity of variances/covariances: DFA is sensitive to heterogeneity of variance-covariance matrices.
+
+- Outliers: DFA is also very sensitive to the inclusion of outliers. It is recommended to run a test for univariate and multivariate outliers for each group, and elimate or transform the outliers. 
+
+- Non-multicollinearity: The independent variables should not be highly correlated with another. Also must be low multicollinearity of the independents. 
+
+# Equations
